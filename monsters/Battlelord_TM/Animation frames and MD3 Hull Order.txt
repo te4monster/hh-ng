@@ -1,0 +1,15 @@
+01 - 30 Walk
+32 - 36 Fire MiniGun
+32 - flashframe
+34 - recoilframe
+37 - 41 Fire Grenades
+37 - fire
+3
+42 - 46 Ouch!That hurts!
+47 - 58 plotz!!
+
+Hull order
+0- Shotblast
+1 - gun
+2 - body
+3 - armour
