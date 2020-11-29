@@ -1,0 +1,72 @@
+// Trooper (1680)
+model "ng/model/monsters/liztrooper_cgp.md3" {
+  scale .30 shade -2
+  skin { pal 0 surface 0 file "ng/model/monsters/lt_laser_d.png" specpower 3 specfactor 2 }
+  normal { surface 0 file "ng/model/monsters/lt_laser_n.png" parallaxbias 0.01 parallaxscale 0.01 }
+  specular { surface 0 file "ng/model/monsters/lt_laser_s.png" }
+
+  skin { pal 0 surface 1 file "ng/model/monsters/liztrooperjetpack_d.png" specpower 2 specfactor 0.8 }
+  normal { surface 1 file "ng/model/monsters/liztrooperjetpack_n.png" parallaxbias 0.01 parallaxscale 0.01 }
+  specular { surface 1 file "ng/model/monsters/liztrooperjetpack_s.png" }
+
+  skin { pal 0 surface 2 file "ng/model/monsters/liztrooperhead_d.png" specpower 1 specfactor 0.3 }
+  normal { surface 2 file "ng/model/monsters/liztrooperhead_n.png" parallaxbias 0.01 parallaxscale 0.01 }
+  specular { surface 2 file "ng/model/monsters/liztrooperhead_s.png" }
+  glow { surface 2 file "ng/model/monsters/liztrooperhead_g.png" }
+
+  skin { pal 0 surface 3 file "ng/model/monsters/liztrooperbody_d.png" specpower 2 specfactor 0.8 }
+  normal { surface 3 file "ng/model/monsters/liztrooperbody_n.png" parallaxbias 0.01 parallaxscale 0.01 }
+  specular { surface 3 file "ng/model/monsters/liztrooperbody_s.png" }
+   
+   anim { frame0 "frame1" frame1 "frame30" fps 50 flags 0 } // Walk
+   frame { name "frame1" tile0 1680 tile1 1704 smoothduration 0.1 }
+
+   anim { frame0 "frame34" frame1 "frame42" fps 22 flags 0 } // Shoot
+   frame { name "frame34" tile0 1715 tile1 1717 smoothduration 0.1 }
+   
+   anim { frame0 "frame46" frame1 "frame56" fps 7 flags 0 } // Fly
+   frame { name "frame46" tile0 1720 tile1 1724 smoothduration 0.8 }
+   
+   anim { frame0 "frame56" frame1 "frame68" fps 7 flags 0 } // Fly Shoot
+   frame { name "frame56" tile0 1725 tile1 1727 smoothduration 0.1 }
+   
+   anim { frame0 "frame72" frame1 "frame82" fps 4 flags 0 } // Sit
+   frame { name "frame72" tile0 1741 tile1 1742 smoothduration 0.3 }
+   
+   anim { frame0 "frame86" frame1 "frame96" fps 20 flags 0 } // Duck
+   frame { name "frame86" tile0 1744 tile1 1751 smoothduration 0.3 }
+   
+   anim { frame0 "frame98" frame1 "frame108" fps 13 flags 1 } // Warp
+   frame { name "frame98" tile0 1754 tile1 1755 smoothduration 0.3 }
+   
+   frame { name "frame118" tile 1730 smoothduration 0.3 }
+   //anim { frame0 "frame111" frame1 "frame122" fps 20 flags 0 } // Flinch
+   //frame { name "frame111" tile0 1730 tile1 1730 smoothduration 0.3 }
+   
+//painskins//
+  skin { pal 0 surface 2 file "ng/model/monsters/liztrooperhead_pain_d.png" specpower 1 specfactor 0.3 }
+  normal { surface 2 file "ng/model/monsters/liztrooperhead_pain_n.png" parallaxbias 0.01 parallaxscale 0.01 }
+  specular { surface 2 file "ng/model/monsters/liztrooperhead_pain_s.png" }
+  glow { surface 2 file "ng/model/monsters/liztrooperhead_g.png" }
+
+  skin { pal 0 surface 3 file "ng/model/monsters/liztrooperbody_pain_d.png" specpower 1 specfactor 0.3 }
+  normal { surface 3 file "ng/model/monsters/liztrooperbody_pain_n.png" parallaxbias 0.01 parallaxscale 0.01 }
+  specular { surface 3 file "ng/model/monsters/liztrooperbody_s.png" }
+  
+   anim { frame0 "frame125" frame1 "frame157" fps 54 } // Die
+   frame { name "frame125" tile0 1731 tile1 1733 smoothduration 0.2 }
+ 
+   frame { name "frame158" tile 1734 } // Dead
+   
+   anim { frame0 "frame161" frame1 "frame171" fps 12 } // Beg
+   frame { name "frame161" tile0 1738 tile1 1740 smoothduration 0.3 }
+   
+   anim { frame0 "frame174" frame1 "frame182" fps 3.5 } // nudge
+   frame { name "frame174" tile 6227 }   
+   }
+// Frozen Alien Trooper (1680)
+model "ng/model/monsters/trooper_ice.md3" {
+   scale .30 shade 2 flags 1
+   skin { file "ng/model/monsters/ice.png" }
+   frame { pal 1 name "frame121" tile 1680 }
+}

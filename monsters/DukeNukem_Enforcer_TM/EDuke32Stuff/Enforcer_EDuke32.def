@@ -1,0 +1,53 @@
+// Enforcer (2120)
+model "ng/model/monsters/enforcer_tm.md3" {
+   scale 1 shade 6
+
+//This is a skin within the HRP. We do not have the rights to redistribute it. 
+//Please download the Duke Nukem HRP to obtain this file.
+   skin { pal 0 surface 2 file "ng/model/monsters/2630_muzzle.png" specpower 0 specfactor 0 }
+   glow { pal 0 surface 2 file "ng/model/monsters/2630_muzzle.png" }
+   
+      
+   skin { pal 0 surface 1 file "ng/model/monsters/enforcer_gun_d.png" specpower 4 specfactor 3 }
+   normal { pal 0 surface 1 file "ng/model/monsters/enforcer_gun_n.png" parallaxbias 0.00 parallaxscale 0.00 } 
+   specular { pal 0 surface 1 file "ng/model/monsters/enforcer_gun_s.png" }   
+ //  glow { file "ng/model/monsters/enforcer_gun_g.png" }
+
+   skin { pal 0 surface 0 file "ng/model/monsters/enforcer_body_d.png" specpower 0.5 specfactor 0.5 }
+   normal { pal 0 surface 0 file "ng/model/monsters/enforcer_body_n.png" parallaxbias 0.00 parallaxscale 0.00 } 
+   specular { pal 0 surface 0 file "ng/model/monsters/enforcer_body_s.png" }   
+   glow { pal 0 surface 0 file "ng/model/monsters/enforcer_body_g.png" }
+
+ // Enforcer Stepping Out
+   anim { frame0 "frame1" frame1 "frame30" fps 45 flags 0 }
+   frame { name "frame1" tile0 2120 tile1 2139 smoothduration 0.1 }
+   
+// Enforcer Loosing His Shit
+   anim { frame0 "frame32" frame1 "frame38" fps 10 flags 0 }
+   frame { name "frame32" tile0 2140 tile1 2144 smoothduration 0.3 }
+   anim { frame0 "frame39" frame1 "frame51" fps 10 flags 1 }
+   frame { name "frame39" tile0 2145 tile1 2150 smoothduration 0.3 }
+   anim { frame0 "frame39" frame1 "frame51" fps 10 flags 1 }
+   frame { name "frame39" tile0 2155 tile1 2161 smoothduration 0.3 }
+   
+// Enforcer - A Leap for Duke
+   anim { frame0 "frame53" frame1 "frame70" fps 10 flags 1 }
+   frame { name "frame53" tile0 2165 tile1 2177 smoothduration 0.2 }
+   
+// Enforcer Merry Christmas You Filthy Animal
+   anim { frame0 "frame117" frame1 "frame123" fps 35 flags 0 }
+   frame { name "frame117" tile0 2190 tile1 2197 smoothduration 0.1 }
+
+// Enforcer gets a farm
+   skin { pal 0 surface 0 file "ng/model/monsters/enforcer_bodyd_d.png" specpower 0.5 specfactor 0.5 }
+   skin { pal 0 surface 1 file "ng/model/monsters/enforcer_gun_d.png" specpower 4 specfactor 3 }
+   anim { frame0 "frame73" frame1 "frame111" fps 30 flags 1 }
+   frame { name "frame73" tile0 2180 tile1 2185 smoothduration 0.1 }
+}
+
+// Frozen Enforcer (2120)
+model "ng/model/monsters/enforcer_ice.md3" {
+  scale 1 flags 1
+  skin { file "ng/model/monsters/ice.png" }
+  frame { pal 1 name "frame120" tile 2120 }
+}
