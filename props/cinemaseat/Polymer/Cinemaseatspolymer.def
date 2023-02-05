@@ -1,0 +1,29 @@
+// CINEMA SEATS
+dummytile 6060 128 24
+model "ng/model/cin_seats8.md3" { 
+   scale 1 shade 0 
+    skin { pal 0 file "ng/model/cin_seats_d.png" specpower 1 specfactor 0.4 } 
+   normal { surface 0 file "ng/model/cin_seats_n.png" parallaxbias 0 parallaxscale 0 }
+   specular { surface 0 file "ng/model/cin_seats_s.png" }
+   frame { name "frame1" tile 6060 }
+}
+
+// CINEMA SEATS 6
+dummytile 6061 128 24
+model "ng/model/cin_seats6.md3" { 
+   scale 1 shade 0 
+    skin { pal 0 file "ng/model/cin_seats_d.png" specpower 1 specfactor 0.4 } 
+   normal { surface 0 file "ng/model/cin_seats_n.png" parallaxbias 0 parallaxscale 0 }
+   specular { surface 0 file "ng/model/cin_seats_s.png" }
+   frame { name "frame1" tile 6061 }
+}
+
+// CINEMA SEATS 12
+dummytile 6062 128 24
+model "ng/model/cin_seats12.md3" { 
+   scale 1 shade 0 
+    skin { pal 0 file "ng/model/cin_seats_d.png" specpower 1 specfactor 0.4 } 
+   normal { surface 0 file "ng/model/cin_seats_n.png" parallaxbias 0 parallaxscale 0 }
+   specular { surface 0 file "ng/model/cin_seats_s.png" }
+   frame { name "frame1" tile 6062 }
+}

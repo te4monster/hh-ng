@@ -1,0 +1,19 @@
+// Rubber Can (1062)
+model "ng/model/1062_rubbercan.md3" {
+   scale 1 shade 4
+   skin { pal 0 surface 0 file "ng/model/1062_rubbercan_d.png" specpower 3 specfactor 2 } 
+   specular { surface 0 file "ng/model/1062_rubbercan_s.png" }
+   normal { surface 0 file "ng/model/1062_rubbercan_n.png" parallaxbias 0.01 parallaxscale 0.01 }
+   frame { name "frame1" tile 1062 }
+   frame { name "frame1" tile 1063 }
+}
+
+// Rubber Can Bent (1063)
+model "ng/model/1063_rubbercan.md3" {
+   scale 1 shade 4
+   skin { pal 0 surface 0 file "ng/model/1062_rubbercan_d.png" specpower 3 specfactor 2 } 
+   specular { surface 0 file "ng/model/1062_rubbercan_s.png" }
+   normal { surface 0 file "ng/model/1062_rubbercan_n.png" parallaxbias 0.01 parallaxscale 0.01 }
+   frame { name "frame1" tile 1063 }
+   frame { name "frame1" tile 1063 }
+}
